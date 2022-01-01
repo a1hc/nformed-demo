@@ -1,0 +1,283 @@
+0000.005 () Opened log file at time: Sat, 18 Dec 2021 23:51:17 +0000 on http://localhost/nformed-demo
+0000.006 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 2.16.66.1 WP: 5.8.2 PHP: 7.4.26 (apache2handler, Windows NT DUANE-DESKTOP 10.0 build 19043 (Windows 10) AMD64) MySQL: 5.7.36 (max packet size=33554432) WPLANG: en_US Server: Apache/2.4.51 (Win64) PHP/7.4.26 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 3.8M | 4M) multisite: N openssl: OpenSSL 1.1.1l  24 Aug 2021 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.006 () Free space on disk containing Updraft's temporary directory: 2232894.1 MB
+0000.027 () Restore setup, now closing connection and starting restore over AJAX.
+0000.004 () Opened log file at time: Sat, 18 Dec 2021 23:51:17 +0000 on http://localhost/nformed-demo
+0000.005 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 2.16.66.1 WP: 5.8.2 PHP: 7.4.26 (apache2handler, Windows NT DUANE-DESKTOP 10.0 build 19043 (Windows 10) AMD64) MySQL: 5.7.36 (max packet size=33554432) WPLANG: en_US Server: Apache/2.4.51 (Win64) PHP/7.4.26 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 3.3M | 2M) multisite: N openssl: OpenSSL 1.1.1l  24 Aug 2021 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.005 () Free space on disk containing Updraft's temporary directory: 2232894.4 MB
+0000.006 () Ensuring WP_Filesystem is setup for a restore
+0000.010 () WP_Filesystem is setup and ready for a restore
+0000.041 () Restore job started. Entities to restore: plugins, themes, uploads, others, db. Restore options: {"updraft_restorer_replacesiteurl":"1","include_unspecified_tables":false,"tables_to_restore":["wp4j_options","wp4j_users","wp4j_usermeta","wp4j_actionscheduler_actions","wp4j_actionscheduler_claims","wp4j_actionscheduler_groups","wp4j_actionscheduler_logs","wp4j_commentmeta","wp4j_comments","wp4j_links","wp4j_postmeta","wp4j_posts","wp4j_term_relationships","wp4j_term_taxonomy","wp4j_termmeta","wp4j_terms","wp4j_e_submissions","wp4j_e_submissions_actions_log","wp4j_e_submissions_values","wp4j_nf3_action_meta","wp4j_nf3_actions","wp4j_nf3_chunks","wp4j_nf3_field_meta","wp4j_nf3_fields","wp4j_nf3_form_meta","wp4j_nf3_forms","wp4j_nf3_object_meta","wp4j_nf3_objects","wp4j_nf3_relationships","wp4j_nf3_upgrades","wp4j_ninja_forms_uploads","wp4j_wpforms_entries","wp4j_wpforms_entry_fields","wp4j_wpforms_entry_meta","wp4j_wpforms_tasks_meta"],"tables_to_skip":[],"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.071 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.073 () Entity: db
+0000.073 () restore_backup(backup_file=backup_2021-12-18-1640_nFormedDemo_be6eafa31aeb-db.gz, type=db, info=a:0:{}, last_one=)
+0000.074 () Unpacking backup... (backup_2021-12-18-1640_nFormedDemo_be6eafa31aeb-db.gz, 2.5 Mb)
+0000.080 () Database successfully unpacked
+0000.081 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.082 () Using direct MySQL access; value of use_mysqli is: 1
+0000.083 () SQL compatibility mode is: NO_AUTO_VALUE_ON_ZERO,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER
+0000.334 () Max packet size: 32 MB
+0000.334 () Entering maintenance mode
+0000.334 () Enabling Maintenance mode&#8230;
+0000.348 () Backup of: https://demo.nformed.net
+0000.384 () Content URL: https://demo.nformed.net/wp-content
+0000.384 () Uploads URL: https://demo.nformed.net/wp-content/uploads
+0000.384 () Old table prefix: wp4j_
+0000.384 () Site information: multisite=0
+0000.385 () Site information: sql_mode=NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+0000.387 () New table prefix: 1v_
+0000.391 () Processing table (MyISAM): wp4j_options - will restore as: 1v_options
+0000.528 () Atomic restore: dropping original table (wp_options)
+0000.532 () Atomic restore: renaming new table (1v_options) to final table name (wp_options)
+0000.536 () Restoring prior UD configuration (table: wp_options; keys: 98)
+0000.709 () Table prefix has changed: changing options table field(s) accordingly (options)
+0000.709 () Options table fields changed OK
+0000.713 () Search and replacing table: wp_options: rows: 364
+0000.844 () Incomplete object detected in database: Elementor\Core\Logger\Items\Base; Search and replace will be skipped for these entries
+0000.844 () Incomplete object detected in database: Elementor\Core\Logger\Items\PHP; Search and replace will be skipped for these entries
+0000.925 () Processing table (MyISAM): wp4j_users - will restore as: 1v_users
+0000.965 () Atomic restore: dropping original table (wp_users)
+0000.968 () Atomic restore: renaming new table (1v_users) to final table name (wp_users)
+0000.974 () Search and replacing table: wp_users: rows: 2
+0000.976 () Processing table (MyISAM): wp4j_usermeta - will restore as: 1v_usermeta
+0001.012 () Atomic restore: dropping original table (wp_usermeta)
+0001.015 () Atomic restore: renaming new table (1v_usermeta) to final table name (wp_usermeta)
+0001.017 () Table prefix has changed: changing usermeta table field(s) accordingly
+0001.019 () Usermeta table fields changed OK
+0001.021 () Search and replacing table: wp_usermeta: rows: 43
+0001.034 () Processing table (MyISAM): wp4j_actionscheduler_actions - will restore as: 1v_actionscheduler_actions
+0001.114 () Atomic restore: dropping original table (wp_actionscheduler_actions)
+0001.115 () Atomic restore: renaming new table (1v_actionscheduler_actions) to final table name (wp_actionscheduler_actions)
+0001.121 () Search and replacing table: wp_actionscheduler_actions: rows: 52
+0001.123 () Incomplete object detected in database: ActionScheduler_IntervalSchedule; Search and replace will be skipped for these entries
+0001.135 () Incomplete object detected in database: ActionScheduler_NullSchedule; Search and replace will be skipped for these entries
+0001.143 () Processing table (MyISAM): wp4j_actionscheduler_claims - will restore as: 1v_actionscheduler_claims
+0001.175 () Atomic restore: dropping original table (wp_actionscheduler_claims)
+0001.176 () Atomic restore: renaming new table (1v_actionscheduler_claims) to final table name (wp_actionscheduler_claims)
+0001.183 () Search and replacing table: wp_actionscheduler_claims: rows: 0
+0001.183 () Processing table (MyISAM): wp4j_actionscheduler_groups - will restore as: 1v_actionscheduler_groups
+0001.241 () Atomic restore: dropping original table (wp_actionscheduler_groups)
+0001.242 () Atomic restore: renaming new table (1v_actionscheduler_groups) to final table name (wp_actionscheduler_groups)
+0001.249 () Search and replacing table: wp_actionscheduler_groups: rows: 2
+0001.251 () Processing table (MyISAM): wp4j_actionscheduler_logs - will restore as: 1v_actionscheduler_logs
+0001.332 () Atomic restore: dropping original table (wp_actionscheduler_logs)
+0001.333 () Atomic restore: renaming new table (1v_actionscheduler_logs) to final table name (wp_actionscheduler_logs)
+0001.340 () Search and replacing table: wp_actionscheduler_logs: rows: 144
+0001.364 () Processing table (MyISAM): wp4j_commentmeta - will restore as: 1v_commentmeta
+0001.410 () Atomic restore: dropping original table (wp_commentmeta)
+0001.413 () Atomic restore: renaming new table (1v_commentmeta) to final table name (wp_commentmeta)
+0001.420 () Search and replacing table: wp_commentmeta: rows: 0
+0001.421 () Processing table (MyISAM): wp4j_comments - will restore as: 1v_comments
+0001.482 () Atomic restore: dropping original table (wp_comments)
+0001.485 () Atomic restore: renaming new table (1v_comments) to final table name (wp_comments)
+0001.491 () Search and replacing table: wp_comments: rows: 1
+0001.493 () Processing table (MyISAM): wp4j_links - will restore as: 1v_links
+0001.569 () Atomic restore: dropping original table (wp_links)
+0001.571 () Atomic restore: renaming new table (1v_links) to final table name (wp_links)
+0001.579 () Search and replacing table: wp_links: rows: 0
+0001.579 () Processing table (MyISAM): wp4j_postmeta - will restore as: 1v_postmeta
+0002.741 () Database queries processed: 50 in 2.65 seconds
+0005.347 () Atomic restore: dropping original table (wp_postmeta)
+0005.350 () Atomic restore: renaming new table (1v_postmeta) to final table name (wp_postmeta)
+0005.420 () Search and replacing table: wp_postmeta: rows: 817
+0013.525 () Processing table (MyISAM): wp4j_posts - will restore as: 1v_posts
+0014.032 () Database queries processed: 100 in 13.94 seconds
+0014.334 () Atomic restore: dropping original table (wp_posts)
+0014.337 () Atomic restore: renaming new table (1v_posts) to final table name (wp_posts)
+0014.342 () Skipping search/replace on GUID column in posts table
+0014.343 () Search and replacing table: wp_posts: rows: 1564
+0017.107 () Processing table (MyISAM): wp4j_term_relationships - will restore as: 1v_term_relationships
+0017.240 () Atomic restore: dropping original table (wp_term_relationships)
+0017.243 () Atomic restore: renaming new table (1v_term_relationships) to final table name (wp_term_relationships)
+0017.246 () Skipping this table: data in this table (wp_term_relationships) should not be search/replaced
+0017.246 () Processing table (MyISAM): wp4j_term_taxonomy - will restore as: 1v_term_taxonomy
+0017.337 () Atomic restore: dropping original table (wp_term_taxonomy)
+0017.339 () Atomic restore: renaming new table (1v_term_taxonomy) to final table name (wp_term_taxonomy)
+0017.346 () Search and replacing table: wp_term_taxonomy: rows: 7
+0017.348 () Processing table (MyISAM): wp4j_termmeta - will restore as: 1v_termmeta
+0017.469 () Atomic restore: dropping original table (wp_termmeta)
+0017.471 () Atomic restore: renaming new table (1v_termmeta) to final table name (wp_termmeta)
+0017.477 () Search and replacing table: wp_termmeta: rows: 0
+0017.477 () Processing table (MyISAM): wp4j_terms - will restore as: 1v_terms
+0017.551 () Atomic restore: dropping original table (wp_terms)
+0017.553 () Atomic restore: renaming new table (1v_terms) to final table name (wp_terms)
+0017.560 () Search and replacing table: wp_terms: rows: 7
+0017.562 () Processing table (MyISAM): wp4j_e_submissions - will restore as: 1v_e_submissions
+0017.691 () Atomic restore: dropping original table (wp_e_submissions)
+0017.692 () Atomic restore: renaming new table (1v_e_submissions) to final table name (wp_e_submissions)
+0017.700 () Search and replacing table: wp_e_submissions: rows: 9
+0017.709 () Processing table (MyISAM): wp4j_e_submissions_actions_log - will restore as: 1v_e_submissions_actions_log
+0017.788 () Atomic restore: dropping original table (wp_e_submissions_actions_log)
+0017.789 () Atomic restore: renaming new table (1v_e_submissions_actions_log) to final table name (wp_e_submissions_actions_log)
+0017.796 () Search and replacing table: wp_e_submissions_actions_log: rows: 9
+0017.799 () Processing table (MyISAM): wp4j_e_submissions_values - will restore as: 1v_e_submissions_values
+0017.893 () Atomic restore: dropping original table (wp_e_submissions_values)
+0017.894 () Atomic restore: renaming new table (1v_e_submissions_values) to final table name (wp_e_submissions_values)
+0017.900 () Search and replacing table: wp_e_submissions_values: rows: 27
+0017.905 () Processing table (MyISAM): wp4j_nf3_action_meta - will restore as: 1v_nf3_action_meta
+0018.041 () Atomic restore: dropping original table (wp_nf3_action_meta)
+0018.042 () Atomic restore: renaming new table (1v_nf3_action_meta) to final table name (wp_nf3_action_meta)
+0018.051 () Search and replacing table: wp_nf3_action_meta: rows: 300
+0018.086 () Processing table (MyISAM): wp4j_nf3_actions - will restore as: 1v_nf3_actions
+0018.203 () Atomic restore: dropping original table (wp_nf3_actions)
+0018.204 () Atomic restore: renaming new table (1v_nf3_actions) to final table name (wp_nf3_actions)
+0018.207 () Search and replacing table: wp_nf3_actions: rows: 11
+0018.209 () Processing table (MyISAM): wp4j_nf3_chunks - will restore as: 1v_nf3_chunks
+0018.537 () Atomic restore: dropping original table (wp_nf3_chunks)
+0018.538 () Atomic restore: renaming new table (1v_nf3_chunks) to final table name (wp_nf3_chunks)
+0018.546 () Search and replacing table: wp_nf3_chunks: rows: 6
+0018.611 () Processing table (MyISAM): wp4j_nf3_field_meta - will restore as: 1v_nf3_field_meta
+0018.822 () Atomic restore: dropping original table (wp_nf3_field_meta)
+0018.823 () Atomic restore: renaming new table (1v_nf3_field_meta) to final table name (wp_nf3_field_meta)
+0018.831 () Search and replacing table: wp_nf3_field_meta: rows: 2385
+0019.130 () Processing table (MyISAM): wp4j_nf3_fields - will restore as: 1v_nf3_fields
+0019.323 () Database queries processed: 150 in 19.24 seconds
+0019.328 () Atomic restore: dropping original table (wp_nf3_fields)
+0019.329 () Atomic restore: renaming new table (1v_nf3_fields) to final table name (wp_nf3_fields)
+0019.336 () Search and replacing table: wp_nf3_fields: rows: 56
+0019.357 () Processing table (MyISAM): wp4j_nf3_form_meta - will restore as: 1v_nf3_form_meta
+0019.538 () Atomic restore: dropping original table (wp_nf3_form_meta)
+0019.539 () Atomic restore: renaming new table (1v_nf3_form_meta) to final table name (wp_nf3_form_meta)
+0019.548 () Search and replacing table: wp_nf3_form_meta: rows: 501
+0019.604 () Processing table (MyISAM): wp4j_nf3_forms - will restore as: 1v_nf3_forms
+0019.726 () Atomic restore: dropping original table (wp_nf3_forms)
+0019.727 () Atomic restore: renaming new table (1v_nf3_forms) to final table name (wp_nf3_forms)
+0019.735 () Search and replacing table: wp_nf3_forms: rows: 3
+0019.737 () Processing table (MyISAM): wp4j_nf3_object_meta - will restore as: 1v_nf3_object_meta
+0019.808 () Atomic restore: dropping original table (wp_nf3_object_meta)
+0019.809 () Atomic restore: renaming new table (1v_nf3_object_meta) to final table name (wp_nf3_object_meta)
+0019.817 () Search and replacing table: wp_nf3_object_meta: rows: 0
+0019.817 () Processing table (MyISAM): wp4j_nf3_objects - will restore as: 1v_nf3_objects
+0019.944 () Atomic restore: dropping original table (wp_nf3_objects)
+0019.945 () Atomic restore: renaming new table (1v_nf3_objects) to final table name (wp_nf3_objects)
+0019.952 () Search and replacing table: wp_nf3_objects: rows: 0
+0019.953 () Processing table (MyISAM): wp4j_nf3_relationships - will restore as: 1v_nf3_relationships
+0020.038 () Atomic restore: dropping original table (wp_nf3_relationships)
+0020.039 () Atomic restore: renaming new table (1v_nf3_relationships) to final table name (wp_nf3_relationships)
+0020.047 () Search and replacing table: wp_nf3_relationships: rows: 0
+0020.048 () Processing table (MyISAM): wp4j_nf3_upgrades - will restore as: 1v_nf3_upgrades
+0020.203 () Atomic restore: dropping original table (wp_nf3_upgrades)
+0020.204 () Atomic restore: renaming new table (1v_nf3_upgrades) to final table name (wp_nf3_upgrades)
+0020.211 () Search and replacing table: wp_nf3_upgrades: rows: 3
+0020.349 () Processing table (MyISAM): wp4j_ninja_forms_uploads - will restore as: 1v_ninja_forms_uploads
+0020.405 () Atomic restore: dropping original table (wp_ninja_forms_uploads)
+0020.406 () Atomic restore: renaming new table (1v_ninja_forms_uploads) to final table name (wp_ninja_forms_uploads)
+0020.409 () Search and replacing table: wp_ninja_forms_uploads: rows: 0
+0020.409 () Processing table (MyISAM): wp4j_wpforms_entries - will restore as: 1v_wpforms_entries
+0020.480 () Atomic restore: dropping original table (wp_wpforms_entries)
+0020.481 () Atomic restore: renaming new table (1v_wpforms_entries) to final table name (wp_wpforms_entries)
+0020.488 () Search and replacing table: wp_wpforms_entries: rows: 0
+0020.488 () Processing table (MyISAM): wp4j_wpforms_entry_fields - will restore as: 1v_wpforms_entry_fields
+0020.547 () Atomic restore: dropping original table (wp_wpforms_entry_fields)
+0020.548 () Atomic restore: renaming new table (1v_wpforms_entry_fields) to final table name (wp_wpforms_entry_fields)
+0020.555 () Search and replacing table: wp_wpforms_entry_fields: rows: 0
+0020.556 () Processing table (MyISAM): wp4j_wpforms_entry_meta - will restore as: 1v_wpforms_entry_meta
+0020.701 () Atomic restore: dropping original table (wp_wpforms_entry_meta)
+0020.702 () Atomic restore: renaming new table (1v_wpforms_entry_meta) to final table name (wp_wpforms_entry_meta)
+0020.711 () Search and replacing table: wp_wpforms_entry_meta: rows: 0
+0020.711 () Processing table (MyISAM): wp4j_wpforms_tasks_meta - will restore as: 1v_wpforms_tasks_meta
+0020.871 () Unlocking database and leaving maintenance mode
+0020.871 () Disabling Maintenance mode&#8230;
+0020.872 () Atomic restore: dropping original table (wp_wpforms_tasks_meta)
+0020.873 () Atomic restore: renaming new table (1v_wpforms_tasks_meta) to final table name (wp_wpforms_tasks_meta)
+0020.880 () Search and replacing table: wp_wpforms_tasks_meta: rows: 15
+0020.883 () Finished: lines processed: 180 in 20.80 seconds
+0020.885 () Cleaning up rubbish...
+0020.886 () Begin search and replace (updraftplus_restored_db)
+0020.886 () [Database-replace-site-url] Database: search and replace site URL
+0020.888 () Restored pre-migration site ID for this installation
+0020.896 () Database search and replace: replace https://demo.nformed.net in backup dump with http://localhost/nformed-demo
+0020.897 () Database search and replace: replace http://demo.nformed.net in backup dump with http://localhost/nformed-demo
+0020.902 () Search and replacing table: wp_actionscheduler_actions: already done
+0020.902 () Search and replacing table: wp_actionscheduler_claims: already done
+0020.902 () Search and replacing table: wp_actionscheduler_groups: already done
+0020.903 () Search and replacing table: wp_actionscheduler_logs: already done
+0020.903 () Search and replacing table: wp_commentmeta: already done
+0020.903 () Search and replacing table: wp_comments: already done
+0020.903 () Search and replacing table: wp_e_submissions: already done
+0020.904 () Search and replacing table: wp_e_submissions_actions_log: already done
+0020.904 () Search and replacing table: wp_e_submissions_values: already done
+0020.904 () Search and replacing table: wp_links: already done
+0020.904 () Search and replacing table: wp_nf3_action_meta: already done
+0020.904 () Search and replacing table: wp_nf3_actions: already done
+0020.905 () Search and replacing table: wp_nf3_chunks: already done
+0020.905 () Search and replacing table: wp_nf3_field_meta: already done
+0020.905 () Search and replacing table: wp_nf3_fields: already done
+0020.905 () Search and replacing table: wp_nf3_form_meta: already done
+0020.906 () Search and replacing table: wp_nf3_forms: already done
+0020.906 () Search and replacing table: wp_nf3_object_meta: already done
+0020.906 () Search and replacing table: wp_nf3_objects: already done
+0020.906 () Search and replacing table: wp_nf3_relationships: already done
+0020.906 () Search and replacing table: wp_nf3_upgrades: already done
+0020.907 () Search and replacing table: wp_ninja_forms_uploads: already done
+0020.907 () Search and replacing table: wp_options: already done
+0020.907 () Search and replacing table: wp_postmeta: already done
+0020.908 () Search and replacing table: wp_posts: already done
+0020.908 () Search and replacing table: wp_term_relationships: already done
+0020.908 () Search and replacing table: wp_term_taxonomy: already done
+0020.908 () Search and replacing table: wp_termmeta: already done
+0020.909 () Search and replacing table: wp_terms: already done
+0020.909 () Search and replacing table: wp_usermeta: already done
+0020.909 () Search and replacing table: wp_users: already done
+0020.909 () Search and replacing table: wp_wpforms_entries: already done
+0020.909 () Search and replacing table: wp_wpforms_entry_fields: already done
+0020.910 () Search and replacing table: wp_wpforms_entry_meta: already done
+0020.910 () Search and replacing table: wp_wpforms_tasks_meta: already done
+0020.924 () Entity: plugins
+0020.924 () restore_backup(backup_file=backup_2021-12-18-1640_nFormedDemo_be6eafa31aeb-plugins.zip, type=plugins, info=a:2:{s:4:"path";s:45:"C:\wamp64\www\nformed-demo/wp-content/plugins";s:11:"description";s:7:"Plugins";}, last_one=)
+0020.925 () Unpacking backup... (backup_2021-12-18-1640_nFormedDemo_be6eafa31aeb-plugins.zip, 23.2 MB)
+0020.932 () Unzipping backup_2021-12-18-1640_nFormedDemo_be6eafa31aeb-plugins.zip to C:/wamp64/www/nformed-demo/wp-content/upgrade/5d5ae3c1/ using UpdraftPlus_ZipArchive, starting index 0
+0022.967 () Unzip progress: 1869 out of 7335 files (867 B, plugins/ninja-forms/assets/css/admin-addons.css)
+0023.794 () Unzip progress: 2870 out of 7335 files (19.6 MB, plugins/ninja-forms-style/styles/includes/Config/FieldTypeSections.php)
+0024.552 () Unzip progress: 3871 out of 7335 files (33.3 MB, plugins/ninja-forms-uploads/vendor-dist/composer/installers/src/Composer/Installers/LithiumInstaller.php)
+0026.494 () Unzip progress: 4872 out of 7335 files (42.4 MB, plugins/updraftplus/includes/WindowsAzure/Common/Internal/Atom/Content.php)
+0036.139 () Unzip progress: 5873 out of 7335 files (51.4 MB, plugins/updraftplus/vendor/rackspace/php-opencloud/lib/OpenCloud/Common/Exceptions/LoggingException.php)
+0037.627 () Unzip progress: 6874 out of 7335 files (69.4 MB, plugins/wpforms/src/Helpers/Chain.php)
+0038.027 () Unzip progress: 7335 out of 7335 files (77.1 MB, plugins/elementor-pro/assets/css/frontend.min.css)
+0038.033 () Moving old data: filesystem method / updraft_dir is potentially possible
+0038.034 () Moving old data: can potentially use wp_filesystem method / -old
+0038.034 () Moving old data out of the way...
+0038.374 () Top-level entities being moved: index.php, updraftplus
+0049.524 () Moving unpacked backup into place...
+0051.419 () Top-level entities being moved: duplicate-page, elementor, elementor-pro, index.php, ninja-forms, ninja-forms-conditionals, ninja-forms-multi-part, ninja-forms-style, ninja-forms-uploads, ninja-forms-user-management, simple-custom-post-order, updraftplus, wpforms, wpforms-conversational-forms, wpforms-form-pages, wpforms-user-registration, wpfront-scroll-top
+0051.441 () Cleaning up rubbish...
+0051.443 () restore_backup(backup_file=backup_2021-12-18-1640_nFormedDemo_be6eafa31aeb-plugins2.zip, type=plugins, info=a:2:{s:4:"path";s:45:"C:\wamp64\www\nformed-demo/wp-content/plugins";s:11:"description";s:7:"Plugins";}, last_one=)
+0051.444 () Unpacking backup... (backup_2021-12-18-1640_nFormedDemo_be6eafa31aeb-plugins2.zip, 9.2 MB)
+0051.444 () Unzipping backup_2021-12-18-1640_nFormedDemo_be6eafa31aeb-plugins2.zip to C:/wamp64/www/nformed-demo/wp-content/upgrade/51486746/ using UpdraftPlus_ZipArchive, starting index 0
+0052.949 () Unzip progress: 1002 out of 1491 files (32.4 MB, plugins/elementor/core/admin/notices/elementor-dev-notice.php)
+0059.488 () Unzip progress: 1491 out of 1491 files (35.3 MB, plugins/wpforms-user-registration/wpforms-user-registration.php)
+0059.495 () Moving unpacked backup into place...
+0059.694 () Top-level entities being moved: elementor, elementor-pro, wpforms-user-registration
+0063.975 () Cleaning up rubbish...
+0063.980 () Entity: themes
+0063.980 () restore_backup(backup_file=backup_2021-12-18-1640_nFormedDemo_be6eafa31aeb-themes.zip, type=themes, info=a:2:{s:4:"path";s:44:"C:\wamp64\www\nformed-demo/wp-content/themes";s:11:"description";s:6:"Themes";}, last_one=)
+0063.982 () Unpacking backup... (backup_2021-12-18-1640_nFormedDemo_be6eafa31aeb-themes.zip, 3 MB)
+0063.983 () Unzipping backup_2021-12-18-1640_nFormedDemo_be6eafa31aeb-themes.zip to C:/wamp64/www/nformed-demo/wp-content/upgrade/1569f149/ using UpdraftPlus_ZipArchive, starting index 0
+0064.284 () Unzip progress: 290 out of 290 files (4.1 MB, themes/index.php)
+0064.290 () Moving old data: filesystem method / updraft_dir is potentially possible
+0064.291 () Moving old data: can potentially use wp_filesystem method / -old
+0064.291 () Moving old data out of the way...
+0064.343 () Top-level entities being moved: index.php, twentynineteen, twentytwenty, twentytwentyone
+0064.346 () Moving unpacked backup into place...
+0064.379 () Top-level entities being moved: hello-elementor, index.php, twentytwentyone
+0064.381 () Cleaning up rubbish...
+0064.385 () Entity: uploads
+0064.385 () restore_backup(backup_file=backup_2021-12-18-1640_nFormedDemo_be6eafa31aeb-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:45:"C:\wamp64\www\nformed-demo/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=)
+0064.385 () Unpacking backup... (backup_2021-12-18-1640_nFormedDemo_be6eafa31aeb-uploads.zip, 8 MB)
+0064.386 () Unzipping backup_2021-12-18-1640_nFormedDemo_be6eafa31aeb-uploads.zip to C:/wamp64/www/nformed-demo/wp-content/upgrade/0a2ea977/ using UpdraftPlus_ZipArchive, starting index 0
+0064.631 () Unzip progress: 203 out of 203 files (8.4 MB, uploads/wpforms/.htaccess)
+0064.634 () Moving old data: filesystem method / updraft_dir is potentially possible
+0064.635 () Moving old data: can potentially use wp_filesystem method / -old
+0064.635 () Moving old data out of the way...
+0064.645 () Moving unpacked backup into place...
+0064.693 () Cleaning up rubbish...
+0064.697 () Entity: others
+0064.697 () restore_backup(backup_file=backup_2021-12-18-1640_nFormedDemo_be6eafa31aeb-others.zip, type=others, info=a:2:{s:4:"path";s:37:"C:\wamp64\www\nformed-demo/wp-content";s:11:"description";s:6:"Others";}, last_one=1)
+0064.698 () Unpacking backup... (backup_2021-12-18-1640_nFormedDemo_be6eafa31aeb-others.zip, 0 MB)
+0064.700 () Unzipping backup_2021-12-18-1640_nFormedDemo_be6eafa31aeb-others.zip to C:/wamp64/www/nformed-demo/wp-content/upgrade/ec1d2fd9/ using UpdraftPlus_ZipArchive, starting index 0
+0064.705 () Unzip progress: 2 out of 2 files (28 B, index.php)
+0064.712 () Cleaning up rubbish...
+0064.714 () Error: Failed to delete working directory after restoring. (C:/wamp64/www/nformed-demo/wp-content/upgrade/ec1d2fd9)
+0064.743 () Elementor's CSS directory exists, and will be emptied (so that it will be automatically regenerated)
+0064.750 () Restore successful!
+0064.750 () Restore successful
